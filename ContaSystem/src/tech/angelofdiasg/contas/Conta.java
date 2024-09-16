@@ -1,10 +1,10 @@
 package tech.angelofdiasg.contas;
 
 public class Conta {
-	   int numero;
-	   double saldo;
+	   private int numero;
+	   private double saldo;
 
-	   boolean sacar(double quantidade) {
+	   public boolean sacar(double quantidade) {
 		   if (this.saldo < quantidade) {
 			   return false;
 		   } else {
@@ -13,7 +13,7 @@ public class Conta {
 		   }
 	   }
 	   
-	   boolean depositar(double quantidade) {
+	   public boolean depositar(double quantidade) {
 		   if(quantidade == 0 || quantidade < 0) {
 			   return false;
 		   } else {
@@ -26,13 +26,28 @@ public class Conta {
 	   public Conta() {
 		   System.out.println("Conta VAZIA criada.");
 	   }
+	   
+	public Conta(int numero) {
+		super();
+		this.numero = numero;
+	}
 
 	public Conta(int numero, double saldo) {
 		System.out.println("Objeto PREENCHIDO criado!");
 		this.numero = numero;
 		this.saldo = saldo;
 	}
-	   
-	   
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}   
 	   
 }
