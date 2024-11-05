@@ -1,4 +1,4 @@
-package tech.angelofdiasg.composicao;
+package tech.angelofdiasg.classesaux;
 
 import java.util.Scanner;
 

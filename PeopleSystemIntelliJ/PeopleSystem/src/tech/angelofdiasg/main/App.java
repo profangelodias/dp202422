@@ -1,14 +1,13 @@
 package tech.angelofdiasg.main;
 
-import tech.angelofdiasg.composicao.Telefone;
 import tech.angelofdiasg.pessoas.Cliente;
-import tech.angelofdiasg.pessoas.Pessoa;
 
 import java.util.Scanner;
 
 public class App {
 
 	public static void main(String[] args) {
+
 		Scanner scanner = new Scanner(System.in);
 		boolean running = true;
 

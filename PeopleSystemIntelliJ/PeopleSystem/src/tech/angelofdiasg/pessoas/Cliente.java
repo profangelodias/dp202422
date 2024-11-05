@@ -1,6 +1,6 @@
 package tech.angelofdiasg.pessoas;
 
-import tech.angelofdiasg.composicao.Profissao;
+import tech.angelofdiasg.classesaux.Profissao;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -48,7 +48,6 @@ public class Cliente extends Pessoa{
         if(resposta.equalsIgnoreCase("S")){
             System.out.println("Informe o nome atualizado: ");
             this.setNome(leitor.nextLine());
-
             System.out.println("Deseja atualizar a data de nascimento? (S/N)");
             resposta = leitor.nextLine();
             if(resposta.equalsIgnoreCase("S")){

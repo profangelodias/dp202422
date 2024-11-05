@@ -1,8 +1,10 @@
-package tech.angelofdiasg.composicao;
+package tech.angelofdiasg.classesaux;
+
+import tech.angelofdiasg.interfaces.Cadastramento;
 
 import java.util.Scanner;
 
-public class Endereco {
+public class Endereco implements Cadastramento {
     private String rua;
     private String numero;
     private String cep;
